@@ -276,8 +276,11 @@ Deberías ver tus commits en `main`.
 **P1.** ¿Cuál es el propósito principal de usar una branch en lugar de trabajar directamente en `main`?
 
 a) Porque Git no permite hacer commits directamente en `main`
+
 b) Para poder trabajar en un cambio de forma aislada, sin afectar el código estable, y que otro pueda revisarlo antes de integrarlo
+
 c) Para que el historial de commits sea más corto y lineal
+
 d) Porque GitHub Classroom lo requiere para la corrección automática
 
 ```
@@ -400,8 +403,11 @@ git pull
 **P2.** Cuando el owner pide cambios (Request changes) en un PR, ¿qué debe hacer el colaborador?
 
 a) Cerrar el PR y abrir uno nuevo con los cambios pedidos
+
 b) Hacer los cambios en su branch local, commitearlos y pushearlos; el PR se actualiza automáticamente
+
 c) Hacer un rebase interactivo para reescribir el historial antes de responder al review
+
 d) Pedirle al owner que mergee igual y hacer el fix en un PR separado
 
 ```
@@ -478,8 +484,11 @@ Deberías ver el commit `wip: experimento roto` seguido del `Revert "wip: experi
 **P3.** `git revert` crea un commit nuevo que deshace los cambios de uno anterior. ¿Por qué es preferible a `git reset --hard` cuando los cambios ya fueron pusheados?
 
 a) Porque `git reset --hard` es más lento en repositorios grandes
+
 b) Porque `git revert` permite elegir exactamente qué líneas revertir dentro de un commit
+
 c) Porque `git reset --hard` modifica el historial local, generando conflictos para todos los que ya descargaron esos commits
+
 d) Porque GitHub bloquea automáticamente los push después de un `git reset --hard`
 
 ```
@@ -607,8 +616,11 @@ git push
 **P4.** Las dos implementaciones de `esPar` que conflictuaban eran `(n % 2) == 0` y `(n & 1) == 0`. ¿Qué diferencia hay entre ellas?
 
 a) Solo `(n % 2) == 0` es correcta; la otra da resultados incorrectos para números impares
+
 b) Son funcionalmente equivalentes para enteros; `%` es el operador módulo y `&` opera a nivel de bits, pero ambos detectan si el último bit es 0
+
 c) `(n & 1) == 0` no funciona con números negativos en ningún compilador C estándar
+
 d) No hay ninguna diferencia; el compilador genera exactamente el mismo código para ambas
 
 ```
@@ -622,8 +634,11 @@ RESPUESTA_P4=
 **P5.** Un compañero te dice: "yo hago un solo commit al final del día con todo lo que hice". ¿Qué problema principal trae esa práctica?
 
 a) Ninguno; es una práctica válida y más eficiente
+
 b) Solo es problema si el mensaje del commit es muy corto
+
 c) Si hay que revertir un cambio puntual es imposible sin deshacer todo lo del día; además los PRs mezclan cambios sin relación y se vuelven difíciles de revisar
+
 d) Git rechaza commits que modifiquen demasiados archivos al mismo tiempo
 
 ```
@@ -635,8 +650,11 @@ RESPUESTA_P5=
 **P6.** ¿Cuál es la diferencia entre `git fetch` y `git pull`?
 
 a) Son equivalentes; `git pull` es simplemente un alias de `git fetch`
+
 b) `git fetch` descarga los cambios remotos sin tocar el working directory; `git pull` hace `fetch` + `merge` en un solo paso
+
 c) `git fetch` solo descarga la branch actual; `git pull` descarga todas las branches remotas
+
 d) `git pull` siempre pide confirmación antes de modificar archivos locales; `git fetch` no
 
 ```
@@ -648,8 +666,11 @@ RESPUESTA_P6=
 **P7.** ¿Qué debería incluir la descripción de un Pull Request para ser útil para quien lo revisa?
 
 a) Solo el título alcanza; la descripción raramente se lee
+
 b) La lista de archivos cambiados y las líneas modificadas (eso ya lo muestra GitHub automáticamente)
+
 c) Qué problema resuelve o qué funcionalidad agrega, cómo se verificó que funciona, y decisiones de diseño relevantes para el reviewer
+
 d) El tiempo que tardó en implementarse y el nombre del autor
 
 ```
